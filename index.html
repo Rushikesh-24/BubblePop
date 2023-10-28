@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" class="w-full h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+  <link rel="stylesheet" href="/assets/index-a9b45150.css">
+</head>
+<body class="m-0 p-0 w-screen h-screen font-body">
+    <div id="main" class="w-screen h-screen bg-gray-500 flex items-center justify-center">
+        <div id="panel" class=" h-5/6 w-5/6 bg-white rounded-xl">
+            <div id="panelTop" class="mb-2 w-full h-20 bg-gray-700 rounded-t-xl flex space-x-5 items-center pt-0 px-9 justify-center flex-wrap">
+                <div id="elem" class="flex items-center">
+                    <h2 class="text-white">Hit </h2>
+                    <div id="hitBox" class="p-1 m-1 bg-white  rounded-sm text-gray-500 font-bold">0</div>
+                </div>
+                <div id="elem" class="flex items-center">
+                    <h2 class="text-white">Timer</h2>
+                    <div id="timerBox" class="p-1 m-1 bg-white rounded-sm text-gray-500 font-bold">0</div>
+                </div>
+                <div id="elem" class="flex items-center ">
+                    <h2 class="text-white">Score</h2>
+                    <div id="scoreBox" class="p-1 m-1 bg-white rounded-sm text-gray-500 font-bold">0</div>
+                </div>
+            </div>
+            <div id="panelBottom" class=" w-full  overflow-hidden flex gap-1 flex-wrap justify-center items-center ">
+                
+
+            </div>
+        </div>
+        <div id="btnContainer" class="flex absolute bottom-0 right-0 left-0 text-center justify-center items-center">
+        <button id="showRulesButton" class="text-white bg-gray-700 hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 text-center  dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-900 m-2   flex ">Rules</button>
+        <button id="reset" class="flex text-white bg-gray-700 hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 text-center  dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-900 m-2">Reset</button>
+    </div></div>
+    
+    <div id="rulesModal" class="hidden fixed inset-0 z-10 justify-center items-center top-0 left-0 w-full h-full  overflow-auto ">
+        <div class="modal-content mx-10 my-auto p-5  w-4/5 text-sm md:text-lg sm:text-lg">
+            <span class="close absolute top-2 right-2 text-xl cursor-pointer" id="close">X</span>
+            <h2 class="flex justify-center">Game Rules</h2>
+            <!-- Insert your rules content here -->
+        
+<p>
+1.The primary goal of the game is to accumulate the highest score possible within the time limit.</p>
+
+<p>2.The game board consists of multiple bubbles, each labeled with a number from 1 to 9, where 9 is the maximum number that can appear in the hit section.</p>
+
+<p>3.There is a designated hit section that displays a specific number. You must click on bubbles with the same number as shown in the hit section to score points..</p>
+
+<p>4.When you correctly click on a bubble with the number matching the one in the hit section, you earn 10 points.</p>
+
+<p>5.The game has a time limit of 60 seconds. You must pop as many matching bubbles as possible within this time frame.</p>
+<p>6.A timer is displayed on the screen, counting down from 60 seconds to 0. When the timer reaches 0, the game ends.</p>
+<p>7.The reset button can be used to restart the game at any time. Clicking the reset button will reset the score to zero and restart the timer at 60 seconds.</p>
+<p>8.The game ends when the timer reaches 0. Your final score is displayed, and you have the option to restart the game using the reset button.</p>
+
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
